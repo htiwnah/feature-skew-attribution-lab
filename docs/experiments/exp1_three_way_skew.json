@@ -1,0 +1,9 @@
+{
+  "total_rows": 30,
+  "parity_mismatches_count": 10,
+  "training_fault_count": 4,
+  "serving_fault_count": 6,
+  "both_fault_count": 2,
+  "clean_parity_count": 18,
+  "resolution_floor_pct": 3.33
+}

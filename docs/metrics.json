@@ -1,0 +1,53 @@
+{
+  "metrics": {
+    "tests_total": 75,
+    "tests_passed": true,
+    "coverage_line_pct": 99.15,
+    "total_rows": 30,
+    "parity_mismatches_count": 10,
+    "training_fault_count": 4,
+    "serving_fault_count": 6,
+    "both_fault_count": 2,
+    "clean_parity_count": 18,
+    "resolution_floor_pct": 3.33
+  },
+  "anchors": {
+    "tests_total": [
+      "{} tests"
+    ],
+    "coverage_line_pct": [
+      "{}% line coverage"
+    ],
+    "total_rows": [
+      "{} parity rows"
+    ],
+    "parity_mismatches_count": [
+      "{} parity mismatches"
+    ],
+    "training_fault_count": [
+      "{} training faults"
+    ],
+    "serving_fault_count": [
+      "{} serving faults"
+    ],
+    "both_fault_count": [
+      "{} both-sides-wrong rows"
+    ],
+    "clean_parity_count": [
+      "{} clean parity rows"
+    ],
+    "resolution_floor_pct": [
+      "{}% resolution floor"
+    ]
+  },
+  "checked_documents": [
+    "README.md",
+    "CHANGELOG.md",
+    "docs/adr/ADR-001-three-way-reference-oracle.md",
+    "docs/adr/ADR-002-explicit-three-way-exit-codes.md",
+    "docs/adr/ADR-003-stdlib-core-and-python312-ci.md",
+    "docs/adr/ADR-004-flag-both-sides-wrong.md",
+    "docs/adr/ADR-005-oracle-independence-boundaries.md"
+  ],
+  "note": "Every value here is produced by running tests and offline experiments."
+}
