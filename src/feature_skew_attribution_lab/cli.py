@@ -24,7 +24,10 @@ def render_table(s: SkewSummary, max_rows: int = 12) -> str:
         hdr,
         "-" * len(hdr),
     ]
-    ordered = sorted(s.verdicts, key=lambda v: (0 if v.blamed_side != "CLEAN_PARITY" else 1, v.row_id))
+    ordered = sorted(
+        s.verdicts,
+        key=lambda v: (0 if v.blamed_side != "CLEAN_PARITY" else 1, v.row_id),
+    )
     for v in ordered[:max_rows]:
         lines.append(
             f"{v.row_id:<7} {v.feature_name:<18} {str(v.parity_mismatch):<5} "
